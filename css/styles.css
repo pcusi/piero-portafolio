@@ -1,0 +1,376 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+/* fuente sf pro */
+@font-face {
+    font-family: 'SF Pro';
+    src: url("../assets/fonts/SF-Pro.ttf");
+}
+
+.theme {
+    font-family: 'SF Pro', sans-serif;
+}
+
+/* root theme */
+:root {
+    --primary-one: #212121;
+    --primary-two: #000000;
+    --secondary-one: #d32f2f;
+    --secondary-two: #c43e00;
+    --font-white: rgba(255, 255, 255, 0.8);
+    --font-whiteGlass: rgba(255, 255, 255, 0.4);
+    --font-darkGlass: rgba(0, 0, 0, 0.4);
+    --bg-darkGlass: rgba(0, 0, 0, 0.4);
+    --bg-gray: rgba(196, 196, 196, 0.3);
+    --font-action: #0070c9;
+    --background-light: rgba(255, 255, 255, 0.8);
+    --background-dark: rgba(0, 0, 0, 0.8);
+    --sf-pro: 'SF Pro', sans-serif;
+}
+
+.theme .ninja__header {
+    background: var(--primary-two);
+    min-height: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 24px;
+}
+.theme .ninja__ul {
+    padding: 24px 0;
+}
+.theme .ninja__ul .ninja__item {
+    list-style-type: none;
+    display: inline;
+    margin: 0 24px;
+}
+.theme .ninja__ul .ninja__item .ninja__link {
+    color: var(--font-white);
+    text-decoration: none;
+}
+.theme .ninja__about {
+    background: var(--primary-two);
+    width: 100%;
+    height: auto;
+}
+.theme .about__first {
+    display: flex;
+    flex-direction: row;
+}
+.theme .about__first .about__left {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 24px;
+    min-height: 200px;
+}
+.theme .about__first .about__left h4{
+    color: var(--secondary-one);
+    margin: 12px 0;
+    font-weight: 700;
+    font-size: 30px;
+}
+.theme .about__first .about__left h1{
+    color: var(--font-white);
+    font-weight: 700;
+    font-size: 60px;
+    margin: 12px 0;
+}
+.theme .about__first .about__left a{
+    background: var(--secondary-one);
+    padding: 4px;
+    margin: 12px 0;
+    color: var(--font-white);
+    text-align: center;
+    width: 110px;
+    font-size: 20px;
+    min-height: 30px;
+    border-radius: 50px;
+}
+.theme .about__first .about__right {
+    width: 50%;
+    min-height: 200px;
+}
+.theme .about__second h1{
+    text-align: center;
+    color: var(--font-white);
+    margin: 24px 0;
+    padding: 0 102px;
+    font-weight: 700;
+    font-size: 60px;
+}
+.theme .about__second p{
+    text-align: center;
+    color: var(--font-white);
+    margin: 24px 0;
+    font-size: 24px;
+    padding: 0 250px;
+}
+/* ilustración waves */
+.theme .ninja__about .waves {
+    max-width: 100%;
+    height: auto;
+    background-image: url("../assets/images/wave.svg");
+}
+/* grid de cards sobre mis habilidades */
+.theme .ninja__about .waves .about__items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 0 24px;
+    grid-gap: 50px;
+    margin: 86px 0;
+}
+.theme .about__items .about__card {
+    background: var(--primary-one);
+    padding: 6px;
+    border-radius: 30px;
+    width: auto;
+    min-height: 110px;
+}
+.theme .about__items .about__card .about__card__body {
+    padding: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.theme .about__items .about__card__body .about__card__icon {
+    width: 64px;
+    height: 64px;
+}
+.theme .about__items .about__card__content {
+    margin: 10px;
+}
+.theme .about__items .about__card__content .card__title {
+    color: var(--font-white);
+    font-size: 30px;
+}
+.theme .about__items .about__card__content .card__subtitle {
+    color: var(--font-whiteGlass);
+    font-size: 30px;
+    font-weight: 700;
+}
+/* Una descripción mía y mi foto */
+.theme .waves .about__three {
+    margin: 24px 0;
+    padding: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.theme .about__three .about__card {
+    width: auto;
+    min-height: 100px;
+    border-radius: 30px;
+    background: var(--bg-darkGlass);
+    backdrop-filter: blur(4px);
+}
+.theme .about__three .about__card .about__card__body {
+    padding: 24px;
+}
+.theme .about__three .about__card .about__card__body h4{
+    color: var(--font-white);
+    font-weight: 700;
+    font-size: 30px;
+}
+.theme .about__three .my__photo {
+    border-radius: 30px;
+    min-width: auto;
+    display: block;
+    margin: 0 auto;
+    height: 300px;
+}
+/* sección de tecnologías */
+.theme .ninja__tech {
+    width: 100%;
+    height: auto;
+    padding: 24px;
+}
+/* contenedor de tecnologías */
+.theme .ninja__tech .tech__first {
+    padding: 102px 0;
+    background: var(--bg-gray);
+    width: 100%;
+    height: auto;
+}
+.theme .tech__first h1 {
+    color: var(--primary-one);
+    font-size: 60px;
+    text-align: center;
+}
+.theme .tech__first h4 {
+    color: var(--font-darkGlass);
+    padding: 24px;
+    font-size: 30px;
+    margin: 48px 0;
+    text-align: center;
+ }
+/* cards de tecnologías */
+.theme .tech__first .tech__items {
+    display: grid;
+    padding: 0 24px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 50px;
+    margin: 48px 0;
+}
+.theme .tech__first .tech__card {
+    background: var(--background-light);
+    padding: 6px;
+    width: auto;
+    min-height: 110px;
+}
+.theme .tech__first .tech__card .tech__card__body {
+    padding: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.theme .tech__first .tech__card__body .tech__card__icon {
+    width: 64px;
+    height: 64px;
+}
+.theme .tech__first .tech__card__body .tech__card__content {
+    margin: 10px
+}
+.theme .tech__first .tech__card__body .tech__card__content .card__title{
+    color: var(--primary-two);
+    font-size: 30px;
+    font-weight: 700;
+    text-align: start;
+    padding: 0;
+    margin: 0;
+}
+.theme .tech__first .tech__card__body .tech__card__content .card__subtitle {
+    color: var(--font-darkGlass);
+    font-size: 30px;
+    font-weight: 700;
+    text-align: start;
+    padding: 0;
+    margin: 0;
+}
+
+/* contenedor de contacto */
+.theme .ninja__contact {
+    padding: 24px;
+}
+.theme .contact__first h1 {
+    font-size: 60px;
+    text-align: center;
+}
+.theme .contact__first p {
+    text-align: center;
+    padding: 24px;
+    font-size: 24px;
+}
+.theme .contact__items {
+    padding: 24px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 50px;
+}
+.theme .contact__items .contact__item .contact__item__icon {
+    width: 84px;
+    height: 84px;
+    display: block;
+    margin: 0 auto;
+    filter: drop-shadow(0px 20px 40px rgba(0, 0, 0, 0.25));
+    backdrop-filter: blur(4px);
+}
+.theme .contact__items .contact__item p {
+    padding: 12px 0;
+    color: var(--font-darkGlass);
+}
+/* formulario */
+.theme .contact__items .contact__item__form {
+    display: flex;
+    flex-direction: column;
+}
+.theme .contact__item__form img {
+    position: absolute;
+    max-width: 70%;
+    max-height: 95%;
+    z-index: 1;
+}
+.theme .contact__item__form .contact__input {
+    position: relative;
+    top: 80px;
+    left: 120px;
+    z-index: 10;
+    margin: 24px 0;
+    padding: 24px;
+    border: none;
+    background: var(--bg-darkGlass);
+    border-radius: 30px;
+    width: 450px;
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.25), 0px 1px 3px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(4px);
+    font-family: var(--sf-pro);
+    color: var(--font-white);
+    font-weight: 500;
+    font-size: 24px;
+}
+.theme .contact__item__form .contact__submit {
+    position: relative;
+    border: none;
+    z-index: 10;
+    background: var(--background-light);
+    width: 120px;
+    height: 50px;
+    border-radius: 30px;
+    top: 85px;
+    left: 120px;
+    font-family: var(--sf-pro);
+    color: var(--primary-two);
+    font-weight: bold;
+    font-size: 24px;
+}
+.theme .contact__item__form input {
+    height: 100px;
+    overflow: hidden;
+}
+.theme .contact__item__form textarea {
+    height: 200px;
+    overflow: hidden;
+}
+.contact__input:focus {
+    outline: none;
+}
+.contact__input::placeholder {
+    font-family: var(--sf-pro);
+    color: var(--font-white);
+    font-size: 24px;
+}
+/* seccion de logo piero girando */
+.theme .contact__item__logo img {
+    display: block;
+    margin: 0 auto;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+/* pie de página */
+.theme .ninja__footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 24px 0;
+    position: relative;
+    padding: 12px 0;
+    z-index: 10;
+    top: 100px;
+    background: var(--bg-gray);
+    width: 100%;
+    height: 50px;
+}
+.theme .ninja__footer h4 {
+    text-align: center;
+    font-size: 14px;
+    color: var(--bg-darkGlass);
+}
