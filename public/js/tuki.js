@@ -3,62 +3,62 @@ const items = document.createElement('div');
 items.classList.add('tech__items');
 const techs = [
     {
-       image: 'assets/icons/piero_cusi_js.png',
+       image: 'public/assets/icons/piero_cusi_js.png',
        title: 'Javascript',
        subtitle: 'Avanzado'
     },
     {
-        image: 'assets/icons/piero_cusi_html.png',
+        image: 'public/assets/icons/piero_cusi_html.png',
         title: 'HTML',
         subtitle: 'Avanzado'
     },
     {
-        image: 'assets/icons/piero_cusi_css.png',
+        image: 'public/assets/icons/piero_cusi_css.png',
         title: 'CSS',
         subtitle: 'Avanzado'
     },
     {
-        image: 'assets/icons/piero_cusi_bootstrap.png',
+        image: 'public/assets/icons/piero_cusi_bootstrap.png',
         title: 'Bootstrap',
         subtitle: 'Avanzado'
     },
     {
-        image: 'assets/icons/piero_cusi_angular.png',
+        image: 'public/assets/icons/piero_cusi_angular.png',
         title: 'Angular',
         subtitle: 'Intermedio'
     },
     {
-        image: 'assets/icons/piero_cusi_ionic.png',
+        image: 'public/assets/icons/piero_cusi_ionic.png',
         title: 'Ionic',
         subtitle: 'Intermedio'
     },
     {
-        image: 'assets/icons/piero_cusi_node.png',
+        image: 'public/assets/icons/piero_cusi_node.png',
         title: 'Node.js',
         subtitle: 'Intermedio'
     },
     {
-        image: 'assets/icons/piero_cusi_git.png',
+        image: 'public/assets/icons/piero_cusi_git.png',
         title: 'Git',
         subtitle: 'Intermedio'
     },
     {
-        image: 'assets/icons/piero_cusi_mysql.png',
+        image: 'public/assets/icons/piero_cusi_mysql.png',
         title: 'MySQL',
         subtitle: 'Intermedio'
     },
     {
-        image: 'assets/icons/piero_cusi_mongodb.png',
+        image: 'public/assets/icons/piero_cusi_mongodb.png',
         title: 'MongoDB',
         subtitle: 'Intermedio'
     },
     {
-        image: 'assets/icons/piero_cusi_php.png',
+        image: 'public/assets/icons/piero_cusi_php.png',
         title: 'PHP',
         subtitle: 'Básico'
     },
     {
-        image: 'assets/icons/piero_cusi_flutter.png',
+        image: 'public/assets/icons/piero_cusi_flutter.png',
         title: 'Flutter',
         subtitle: 'Básico'
     }
