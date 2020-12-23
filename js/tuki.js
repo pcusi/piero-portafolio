@@ -69,7 +69,7 @@ function printTechs() {
         ${techs.map((item) => `
               <div class="tech__card">
                   <div class="tech__card__body">
-                    <img src="${item.image}" class="tech__card__icon">
+                    <img src="${item.image}" class="tech__card__icon" alt="Piero Cusi Habilidades">
                         <div class="tech__card__content">
                             <h4 class="card__title">${item.title}</h4>
                             <h4 class="card__subtitle">${item.subtitle}</h4>
