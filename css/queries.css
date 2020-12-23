@@ -54,8 +54,28 @@
     .theme .waves .about__items {
         margin: 24px 0 !important;
     }
+    .theme .ninja__about .waves .about__items {
+        grid-gap: 15px;
+    }
     .theme .about__three .about__items {
         padding: 24px 0 !important;
+    }
+    .theme .waves .about__three {
+        padding: 0 24px;
+    }
+    .theme .tech__first .tech__items {
+        grid-gap: 15px;
+    }
+    .theme .about__first {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    /* sección tecnologías */
+    .theme .ninja__tech .tech__first {
+        padding: 24px 0;
+    }
+    .theme .tech__first h4 {
+        padding: 0 24px;
     }
     /* responsive formulario */
     .theme .contact__item__form .contact__input {
@@ -86,6 +106,12 @@
     /* ninja */
     .theme .contact__item__logo img {
         display: none;
+    }
+    /* ninja laptop */
+    .theme .about__first .about__right .about__right__icon {
+        margin: 0 24px;
+        width: 320px;
+        height: auto;
     }
     /* blob */
     .theme .contact__item__form img {
@@ -197,9 +223,19 @@
         margin: 24px 0;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
+    .theme .about__first {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
     /* ninja */
     .theme .contact__item__logo img {
         display: none;
+    }
+    /* ninja laptop */
+    .theme .about__first .about__right .about__right__icon {
+        margin: 0;
+        width: 320px;
+        height: auto;
     }
     /* blob */
     .theme .contact__item__form img {
