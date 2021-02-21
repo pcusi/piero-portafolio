@@ -5,8 +5,17 @@
         margin: 0 5px;
     }
     .theme .about__first .about__left a {
+        display: block;
+        margin: 12px auto;
         font-size: 17px !important;
     }
+    .theme .about__first .about__left h4 {
+        text-align: center;
+    }
+    .theme .about__first .about__left h1 {
+        text-align: center;
+    }
+
     .theme .about__second p {
         font-size: 17px !important;
         padding: 0 24px;
